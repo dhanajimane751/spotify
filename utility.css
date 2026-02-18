@@ -1,0 +1,17 @@
+.invert{
+    filter: invert(1);
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.flex1{
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+.flex2{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}

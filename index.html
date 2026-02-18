@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify – Web Player</title>
+    <link rel="icon"href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="flex1">
+            <div class="spotify">
+
+                <a href="https://open.spotify.com/" target="_blank"><img class="invert" src="images/spotify.svg"
+                        alt=""></a>
+            </div>
+            <div class="home">
+                <span class="homeimg">
+                    <img class="invert" src="images/home.svg" alt="">
+                </span>
+                <span class="search">
+                    <input type="text" placeholder="What do you want to play ?" class="searchbox">
+                    <span class="searchimg">
+                        <img class="invert" src="images/search.svg" alt="">
+                    </span>
+                </span>
+            </div>
+        </div>
+        <div class="flex2">
+            <div class="premium">
+                <button>Premium</button>
+                <button>Support</button>
+                <button>Download</button>
+            </div>
+            <div class="install">
+                <button class="installapp">
+                    <img src="images/install.svg" alt="">
+                    <span>
+                        Install App
+                    </span>
+                </button>
+                <button class="signup">
+                    Sign Up
+                </button>
+
+                <a href="https://accounts.spotify.com/en/login?continue=https%3A%2F%2Fopen.spotify.com%2Fsearch%2F"
+                    target="_blank"><button class="login">Log in</button></a>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="main">
+        <div class="left">
+            <div class="library">Your Library</div>
+            <div class="songlist">
+
+            </div>
+
+        </div>
+        <div class="right">
+            <div class="trending">
+                Trending Playlist
+            </div>
+            <div class="allcard">
+
+            </div>
+            <div class="playbar">
+                <div class="seekcontainer">
+                    <div class="flex"> <input class="seekbar" type="range"></div>
+                    <div class="timer">00:00/00:00</div>
+                </div>
+                <div class="belowseekcontainer">
+
+                    <div class="playingsongname">No song playing</div>
+                    <div class="buttons">
+                        <button><img class="prev" src="images/prev.svg" alt=""></button>
+                        <button><img class="pause" src="images/playbut.svg" alt=""></button>
+                        <button><img class="next" src="images/next.svg" alt=""></button>
+                    </div>
+                    <div class="volume">
+                    <button><img class="volmute" src="images/vol.svg" alt=""></button>
+                    <input class="volrange" type="range">
+                </div>
+                </div>
+                
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
