@@ -16,7 +16,7 @@ async function delay() {
 }
 
 async function getfolder() {
-    let a = await fetch("http://127.0.0.1:3000/songs");
+    let a = await fetch("./songs");
     let song = await a.text();
     let parser = new DOMParser();
     let html = parser.parseFromString(song, "text/html");
@@ -30,7 +30,7 @@ async function getfolder() {
     }
 }
 async function getsong(folder) {
-    let a = await fetch(`http://127.0.0.1:3000/songs/${folder}`);
+    let a = await fetch(`./songs/${folder}`);
     let song = await a.text();
     let parser = new DOMParser();
     let html = parser.parseFromString(song, "text/html");
@@ -86,7 +86,7 @@ async function righthtml() {
 }
 async function getinfo(f) {
     try {
-        let a = await fetch(`http://127.0.0.1:3000/songs/${f}new.json`);
+        let a = await fetch(`./songs/${f}new.json`);
         let b = await a.json();
         return b.info;
     }
